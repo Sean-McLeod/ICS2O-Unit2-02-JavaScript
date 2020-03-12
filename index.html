@@ -8,28 +8,46 @@
     <title> </title>
   </head>
   <body>
-    <button onclick="myFunction1()">Click me</button>
+    <button onclick="myFunction()">Make text appear</button>
     <p id="demo"></p>
     <script>
-function myFunction1() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
+      function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello World";
+      }
     </script>
+    <button onclick="myfunction4()">Make text disappear</button>
     <script>
-window.onclick = myFunction;
-
-function myFunction() {
-  document.getElementsByTagName("BODY")[0].style.backgroundColor = "pink";
-}
+      function myfunction4() {
+        document.getElementById("demo").style.display="none";
+      }
     </script>
-    </script>
-    <button onclick="document.getElementById('myimage').src='sea.jpg'">Sea</button>
-
-    <img id="myimage" src="pic_bulboff.gif" width="300">
-
-    <button onclick="document.getElementById('myimage').src='mount.jpg'">Mountain</button>
     <br>
     <br>
-    <button onclick="myFunction1()">Change background color!</button>
+  <p id="BODY"></p>
+  <button onclick = "myFunction1()">Click me to change background color!</button>
+  <script>
+
+    function myFunction1() {
+    document.getElementsByTagName("BODY")[0].style.backgroundColor = "pink";
+    }
+    </script>
+    <br>
+    <button onclick="document.getElementById('myimage').src='./images/sea.jpg'">Sea</button>
+
+    <img id="myimage" src="./images/sea.jpg" width="300">
+
+    <button onclick="document.getElementById('myimage').src='./images/mount.jpg'">Mountain</button>
+    <br>
+    <br>
+    
+    <button onclick="myFunction2()">Click me to change what text is displayed!</button>
+    <p id="what">Hi</p>
+    <script>
+      function myFunction2() {
+        document.getElementById("what").innerHTML = "Hello";
+      }
+    </script>
   </body>
 </html>
+
+ <img id="myimg"; src="./images/css.jpg">
