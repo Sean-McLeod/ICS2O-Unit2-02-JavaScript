@@ -23,13 +23,12 @@
     </script>
     <br>
     <br>
-  <p id="BODY"></p>
-  <button onclick = "myFunction1()">Click me to change background color!</button>
-  <script>
-
-    function myFunction1() {
-    document.getElementsByTagName("BODY")[0].style.backgroundColor = "pink";
-    }
+    <p id="body"></p>
+    <button onclick="myFunction1()">Click me to change background color!</button>
+    <script>
+      function myFunction1() {
+      document.getElementsByTagName("body")[0].style.backgroundColor = "pink";
+      }
     </script>
     <br>
     <button onclick="document.getElementById('myimage').src='./images/sea.jpg'">Sea</button>
@@ -39,15 +38,12 @@
     <button onclick="document.getElementById('myimage').src='./images/mount.jpg'">Mountain</button>
     <br>
     <br>
-    
     <button onclick="myFunction2()">Click me to change what text is displayed!</button>
     <p id="what">Hi</p>
     <script>
       function myFunction2() {
-        document.getElementById("what").innerHTML = "Hello";
+      document.getElementById("what").innerHTML = "Hello";
       }
     </script>
   </body>
 </html>
-
- <img id="myimg"; src="./images/css.jpg">
